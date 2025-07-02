@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Anurag Singh</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Hi, I'm Anurag Singh</h1>
+      <nav class="center-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active-page">Contact</a>
+      </nav>
+      <div class="theme-toggle" id="theme-toggle">
+        <span id="sun-icon" class="active">🌞</span>
+        <span id="moon-icon">🌙</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="contact-links">
+        <a href="mailto:anuragsingh82791@gmail.com" target="_blank" class="social-link">
+          <i class="fas fa-envelope"></i> anuragsingh82791@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/anurag-singh47" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.instagram.com/___anuragsingh__" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anurag Singh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
