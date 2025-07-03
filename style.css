@@ -1,0 +1,524 @@
+/* Base Styles */
+/* Base Styles */
+body {
+  font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/lighto.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  transition: background-image 0.5s ease-in-out, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: url('images/dark.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+}
+
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 40px 30px;
+}
+
+/* Header Layout */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.header-container h1 {
+  flex: 1;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Center Nav Links */
+.center-nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.center-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.center-nav a:hover{
+  font-size: 30px;
+  color: red;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-toggle span {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  text-shadow: none;
+}
+
+.theme-toggle .active {
+  opacity: 1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Section */
+.hero-section {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.left-content,
+.center-photo{
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+.right-content {
+  flex: 1.5;
+  min-width: 250px;
+  padding: 20px;
+}
+.expe{
+  font-size: 29px;
+}
+
+.left-content {
+  text-align: left;
+}
+
+.center-photo {
+  text-align: center;
+}
+
+.right-content {
+  text-align: right;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 420px;
+  height: 520px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+  margin-left: 200px;
+}
+
+/* Text Highlights */
+.highlight {
+  color: crimson;
+}
+
+.expert {
+  color: crimson;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Button */
+.hire-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hire-btn:hover {
+  background-color: darkred;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .hire-btn {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+.dark-mode .hire-btn:hover {
+  background-color: #ccc;
+}
+
+.dark-mode .profile-img {
+  border-color: #f0f0f0;
+}
+
+/* Responsive Layout Fix */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container h1,
+  .center-nav,
+  .theme-toggle {
+    justify-content: center;
+    flex: none;
+  }
+}
+/*----------------------------css-------------*/
+
+/* About Section */
+.about-section {
+  padding: 80px 40px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-content {
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-content h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  padding-left: 30px;
+  list-style-type: square;
+}
+
+.about-content a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+body.dark-mode .about-content {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: #f0f0f0;
+}
+
+/*projects css*/body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 40px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.center-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.center-nav a:hover,
+.center-nav .active-page {
+  font-weight: bold;
+  color: crimson;
+}
+
+.theme-toggle span {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 24px;
+}
+
+.theme-toggle .active {
+  opacity: 1;
+}
+
+.projects-section {
+  padding: 40px;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.project-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.github-link {
+  display: inline-block;
+  margin: 10px 0;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.tech-badges img {
+  margin: 5px 5px 0 0;
+  height: 28px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-img {
+    max-width: 90%;
+  }
+}
+
+/* Light mode project item (default) */
+.project-item {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode override */
+body.dark-mode .project-item {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .project-item a.github-link {
+  color: #4ea8ff;
+}
+
+body.dark-mode .project-item p,
+body.dark-mode .project-item h3 {
+  color: #f0f0f0;
+}
+.project-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img:hover {
+  transform: scale(4.9);
+  cursor: pointer;
+}
+.attendance-img:hover {
+  transform: scale(1.5); /* Bigger zoom for Attendance App */
+}
+
+
+/*contact*/
+/* Existing styles for the contact section */
+.contact-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+body.dark-mode .contact-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  position: relative;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background: transparent;
+  outline: none;
+  color: #000;
+  box-sizing: border-box; /* ✅ prevents overflow */
+  resize: vertical;        /* ✅ allows vertical resize only */
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  color: #f0f0f0;
+}
+
+.form-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #666;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background-color: transparent;
+}
+
+.form-group input.filled + label,
+.form-group input:focus + label,
+.form-group textarea.filled + label,
+.form-group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  font-size: 120%;
+  font-weight: bold;
+  background-color: white;
+  padding: 0 4px;
+  color: crimson;
+}
+
+body.dark-mode .form-group label {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+#contact-form button {
+  background-color: crimson;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: darkred;
+}
+.contact-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.social-link {
+  color: crimson;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+body.dark-mode .social-link {
+  color: #f0f0f0;
+}
+
+body.dark-mode .social-link:hover {
+  color: #ff6666;
+}
